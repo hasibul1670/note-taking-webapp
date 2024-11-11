@@ -7,7 +7,6 @@ const createUserZodSchema = z.object({
       lastName: z.string(),
     }),
     email: z.string().email(),
-    contactNo: z.string(),
     password: z.string().min(6) 
   }),
 });

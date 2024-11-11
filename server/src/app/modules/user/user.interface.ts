@@ -12,8 +12,6 @@ export type IUser = {
   role: string;
   password: string;
   name: UserName;
-  contactNo: string;
-  profileImage?: string;
 };
 
 export type UserModel = {

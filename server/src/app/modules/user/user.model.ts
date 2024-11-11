@@ -39,13 +39,6 @@ export const UserSchema = new Schema<IUser, UserModel>(
       required: true,
       select: 0,
     },
-    contactNo: {
-      type: String,
-      required: true,
-    },
-    profileImage: {
-      type: String,
-    },
   },
   {
     timestamps: true,

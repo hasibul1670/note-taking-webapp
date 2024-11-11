@@ -5,8 +5,8 @@ import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { AiFillCaretDown, AiFillCaretUp } from "react-icons/ai";
 import { BiNotepad } from "react-icons/bi";
-import { usePostNoteMutation } from "../../redux/features/note/noteApi";
 import { toast } from "sonner";
+import { usePostNoteMutation } from "../../redux/features/note/noteApi";
 
 const TakeNote = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
@@ -144,18 +144,11 @@ const TakeNote = () => {
               >
                 Save
               </button>
-              <button
-                onClick={() => {
-                  handleCloseModal();
-                }}
-                className="btn  capitalize btn-sm rounded-lg btn-error"
-              >
-                close
-              </button>
+           
             </div>
           </div>
 
-          <div className="lg:mt-10  py-2 md:px-10  ">
+          <div className="lg:mt-10  py-2 md:px-10  overflow-y-hidden ">
             <input
               type="text"
               placeholder="Title"

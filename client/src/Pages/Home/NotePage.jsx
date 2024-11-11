@@ -44,8 +44,8 @@ const NotePage = ({ filteredNotes, isLoading }) => {
         heading={`${greeting}🙋‍♂️ ${name}, Your Notes`}
       ></SectionTitle>
 
-      <div className="flex justify-center  container mx-auto mb-5    px-4">
-        <div className="grid  mt-4 md:grid-cols-2 lg:grid-cols-3  gap-5">
+      <div className="flex justify-center  container mx-auto mb-5 px-4">
+        <div className="grid  mt-4 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {pinnedNotes?.length > 0 &&
             pinnedNotes?.map((course) => (
               <NoteCard key={course._id} course={course}></NoteCard>

@@ -38,13 +38,13 @@ const loginUser = async (
   // Generate an access token
   const accessToken = jwtHelpers.createToken(
     { email, userDetails },
-    config.jwt.secret as Secret,
-    config.jwt.expires_in as string
+    config.jwt.secret as any,
+    config.jwt.expires_in as any
   );
   const refreshToken = jwtHelpers.createToken(
     { email, userDetails },
-    config.jwt.refresh_secret as Secret,
-    config.jwt.refresh_expires_in as string
+    config.jwt.refresh_secret as any,
+    config.jwt.refresh_expires_in as any
   );
 
   // Return the response object

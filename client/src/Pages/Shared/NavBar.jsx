@@ -14,8 +14,6 @@ const NavBar = ({ onSearchChange }) => {
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-
   const toggleDropdown = () => {
     setDropdownOpen(!isDropdownOpen);
   };
@@ -28,7 +26,7 @@ const NavBar = ({ onSearchChange }) => {
         <div className="form-control">
           <input
             type="text"
-            className="input rounded-lg input-bordered  h-10 w-full md:w-auto"
+            className="input rounded-lg input-bordered h-8 w-full md:w-auto"
             placeholder="Search by title,category,description..."
             value={searchInput}
             onChange={handleSearchInputChange}
@@ -43,10 +41,9 @@ const NavBar = ({ onSearchChange }) => {
   };
 
   return (
-    <div className="bg-gray-700 h-20">
+<div className="bg-gradient-to-r from-blue-500 via-purple-500 to-teal-500 h-[65px]">
       <div
-        className="navbar  
- z-20   container mx-auto "
+        className="navbar z-20 container mx-auto "
       >
         <div className="navbar-start">
           <div className="dropdown ">
@@ -154,7 +151,7 @@ const NavBar = ({ onSearchChange }) => {
               <Link to="/login">
                 <button
                   onClick={handleLogOut}
-                  className="btn hover:bg-blue-900 border-none btn-sm bg-cyan-700  rounded-lg hidden  lg:block"
+                  className="btn hover:bg-red-700 border-none btn-sm bg-red-800  rounded-lg hidden  lg:block"
                 >
                   <span className="text-white text-xs capitalize">logout</span>
                 </button>

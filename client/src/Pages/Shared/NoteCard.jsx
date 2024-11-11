@@ -85,7 +85,7 @@ const NoteCard = ({ course }) => {
           <>
             <div
               onClick={handleCardClick}
-              className="card w-64 border-solid border-1 border-sky-200 shadow-xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-5000 "
+              className="card cursor-pointer w-64 border-solid border-1 border-sky-200 shadow-xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-500 "
               style={{
                 backgroundColor: bgColor,
               }}
@@ -109,7 +109,7 @@ const NoteCard = ({ course }) => {
       {!pinNote && (
         <div
           onClick={handleCardClick}
-          className="card w-64 border-solid border-1 border-sky-200 shadow-xl hover:shadow-3xl transform hover:-translate-y-1 transition-all duration-3000 "
+          className="card cursor-pointer w-64 border-solid border-1 border-sky-200 shadow-xl hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 "
           style={{
             backgroundColor: bgColor,
           }}
@@ -129,7 +129,7 @@ const NoteCard = ({ course }) => {
 
       {isPopupVisible && (
         <div
-          className="fixed inset-0 z-50 overflow-auto bg-opacity-50 flex justify-center items-center overlay bg-black"
+          className="fixed  inset-0 z-50 overflow-auto bg-opacity-50 flex justify-center items-center overlay bg-black"
           onClick={handleOverlayClick}
         >
           <div
