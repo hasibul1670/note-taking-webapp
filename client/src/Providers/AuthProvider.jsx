@@ -7,8 +7,8 @@ import { app } from "../Components/firebase/firebase.config";
 export const AuthContext = createContext(null);
 
 const auth = getAuth(app);
-// export const baseUrl = "https://server009.vercel.app/api/v1";
-export const baseUrl = "http://localhost:5000/api/v1";
+export const baseUrl = "https://server009.vercel.app/api/v1";
+// export const baseUrl = "http://localhost:5000/api/v1";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
